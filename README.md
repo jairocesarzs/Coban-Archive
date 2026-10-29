@@ -24,9 +24,9 @@ abertura instantânea mesmo em bibliotecas grandes.
 
 | Tela Principal | Player de Música |
 | :---: | :---: |
-| [<img src="LINK_DIRETO_1" width="400" alt="Tela Principal">](https://imgur.com/a/NFmVYCE) | [<img src="LINK_DIRETO_2" width="400" alt="Player de Música">](https://imgur.com/a/z4RbBS6) |
+| <img src="https://i.imgur.com/G2VC0hJ.png" width="400"> | <img src="https://i.imgur.com/0EkdC5W.png" width="400"> |
 | **Galeria de Fotos** | **Configurações** |
-| [<img src="LINK_DIRETO_3" width="400" alt="Galeria">](https://imgur.com/a/gYZj8m2) | [<img src="LINK_DIRETO_4" width="400" alt="Configurações">](https://imgur.com/a/S8pLRrw) |
+| <img src="https://i.imgur.com/b1QQsul.png" width="400"> | <img src="https://imgur.com/a/S8pLRrw.png" width="400"> |
 
 ## 📦 Instalação
 
