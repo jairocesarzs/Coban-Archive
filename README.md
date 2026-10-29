@@ -1,4 +1,4 @@
-## 🎵 Coban Archive
+##  Coban Archive
 
 Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos.
 Interface desktop construída com Python + PySide6, com cache SQLite para abertura instantânea mesmo em bibliotecas grandes.
