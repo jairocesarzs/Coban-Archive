@@ -1,24 +1,32 @@
-# 🎵 Coban Archive
+#  Coban Archive
 
 Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos.
 Interface desktop construída com Python + PySide6, com cache SQLite para
 abertura instantânea mesmo em bibliotecas grandes.
 
-## ✨ Funcionalidades
+##  Funcionalidades
 
-- 🎵 **Músicas** — grid com capas extraídas de tags ID3/Vorbis/MP4
-- 💿 **CDs / Álbuns** — agrupamento automático por pasta
-- 🎬 **Vídeos** — player embutido com efeito CRT, retomada automática
-- 🎮 **Jogos** — abre ROMs no emulador padrão do sistema
-- 🖼 **Galeria** — visualização com zoom em tela cheia
-- 🔍 **Busca global** (`Ctrl+K`) em toda a biblioteca
-- 🔀 **Shuffle** e **Repeat** (off / all / one)
-- ⌨️ **Atalhos globais**: `Ctrl+Space`, `Ctrl+←/→`, `Ctrl+K`, `F11`
-- 💾 **Cache SQLite** com QFileSystemWatcher — abre instantâneo na 2ª execução
-- 🎨 Temas **escuro** e **claro**
-- 🌐 Tray icon com controles rápidos
-- 🎯 Retoma áudio e vídeo de onde parou
-- 📝 Log rotativo em `~/.local/share/CobanArchive/` (Linux) ou `%APPDATA%\Coban\CobanArchive\` (Windows)
+-  **Músicas** — grid com capas extraídas de tags ID3/Vorbis/MP4
+-  **CDs / Álbuns** — agrupamento automático por pasta
+-  **Vídeos** — player embutido com efeito CRT, retomada automática
+-  **Jogos** — abre ROMs no emulador padrão do sistema
+-  **Galeria** — visualização com zoom em tela cheia
+-  **Busca global** (`Ctrl+K`) em toda a biblioteca
+-  **Shuffle** e **Repeat** (off / all / one)
+-  **Atalhos globais**: `Ctrl+Space`, `Ctrl+←/→`, `Ctrl+K`, `F11`
+-  **Cache SQLite** com QFileSystemWatcher — abre instantâneo na 2ª execução
+-  Temas **escuro** e **claro**
+-  Tray icon com controles rápidos
+-  Retoma áudio e vídeo de onde parou
+-  Log rotativo em `~/.local/share/CobanArchive/` (Linux) ou `%APPDATA%\Coban\CobanArchive\` (Windows)
+
+## 📸 Capturas de Tela
+
+| Tela Principal | Player de Música |
+| :---: | :---: |
+| [<img src="LINK_DIRETO_1" width="400" alt="Tela Principal">](https://imgur.com/a/NFmVYCE) | [<img src="LINK_DIRETO_2" width="400" alt="Player de Música">](https://imgur.com/a/z4RbBS6) |
+| **Galeria de Fotos** | **Configurações** |
+| [<img src="LINK_DIRETO_3" width="400" alt="Galeria">](https://imgur.com/a/gYZj8m2) | [<img src="LINK_DIRETO_4" width="400" alt="Configurações">](https://imgur.com/a/S8pLRrw) |
 
 ## 📦 Instalação
 
