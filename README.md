@@ -24,7 +24,7 @@ Interface desktop construída com Python + PySide6, com cache SQLite para abertu
 - **Retomada:** Salva e continua o áudio e vídeo de onde parou.
 - **Logs:** Registro rotativo em `%APPDATA%\Coban\CobanArchive\` (Windows) ou equivalente.
 
-## 📸 Capturas de Tela
+##  Capturas de Tela
 
 <p align="center">
   <img src="https://i.imgur.com/rT4ltny.png" width="1000" alt="Tela Principal">
@@ -42,7 +42,7 @@ Interface desktop construída com Python + PySide6, com cache SQLite para abertu
   <img src="https://i.imgur.com/Hwv9LgQ.png" width="1000" alt="Configurações">
 </p>
 
-## 📦 Instalação
+##  Instalação
 
 ### Requisitos
 - Python 3.9+
