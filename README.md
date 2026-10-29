@@ -14,7 +14,7 @@ Interface desktop construída com Python + PySide6, com cache SQLite para abertu
 </p>
 
 <p align="center">
-  <img src="https://i.imgur.com/b1QQsul.png" width="1000" alt="Galeria de Fotos">
+  <img src="https://i.imgur.com/a0nck3t.png" width="1000" alt="Galeria de Fotos">
 </p>
 
 <p align="center">
