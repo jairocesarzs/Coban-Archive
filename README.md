@@ -1,5 +1,3 @@
-# Coban-Archive
-
 # Coban Archive
 
 Central de mídia pessoal para desktop, feita em **Python + PySide6 (Qt)**. Em vez de abrir um programa para cada tipo de arquivo, você organiza e reproduz seu acervo de músicas, CDs, vídeos, jogos e fotos em um único app, com visual próprio e player sempre à mão.
