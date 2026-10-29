@@ -1,3 +1,5 @@
+## 🎵 Coban Archive
+
 Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos.
 Interface desktop construída com Python + PySide6, com cache SQLite para abertura instantânea mesmo em bibliotecas grandes.
 
@@ -18,8 +20,6 @@ Interface desktop construída com Python + PySide6, com cache SQLite para abertu
 <p align="center">
   <img src="https://i.imgur.com/Hwv9LgQ.png" width="1000" alt="Configurações">
 </p>
-
-## 🎵 Coban Archive
 
 ## ✨ Funcionalidades
 
