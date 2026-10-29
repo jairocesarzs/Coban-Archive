@@ -31,7 +31,7 @@ Interface desktop construída com Python + PySide6, com cache SQLite para abertu
 git clone https://github.com/seu-usuario/coban-archive.git
 cd coban-archive
 pip install -r requirements.txt
-python main.py
+python main.py```
 
 ## 📸 Capturas de Tela
 
