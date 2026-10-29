@@ -39,7 +39,7 @@ except ImportError:
 log = logging.getLogger(__name__)
 
 APP_VERSION = "1.1.2"
-GITHUB_URL = "https://github.com/seu-usuario/coban-archive"
+GITHUB_URL = "https://github.com/jairocesarzs/Coban-Archive"
 APP_DESCRIPTION = (
     "Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos."
 )
