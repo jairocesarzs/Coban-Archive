@@ -3,24 +3,6 @@
 Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos.
 Interface desktop construída com Python + PySide6, com cache SQLite para abertura instantânea mesmo em bibliotecas grandes.
 
-## 📸 Capturas de Tela
-
-<p align="center">
-  <img src="https://i.imgur.com/rT4ltny.png" width="1000" alt="Tela Principal">
-</p>
-
-<p align="center">
-  <img src="https://i.imgur.com/PWy0UCv.png" width="1000" alt="Player de Música">
-</p>
-
-<p align="center">
-  <img src="https://i.imgur.com/a0nck3t.png" width="1000" alt="Galeria de Fotos">
-</p>
-
-<p align="center">
-  <img src="https://i.imgur.com/Hwv9LgQ.png" width="1000" alt="Configurações">
-</p>
-
 ## ✨ Funcionalidades
 
 - 🎵 **Músicas** — grid com capas extraídas de tags ID3/Vorbis/MP4
@@ -50,3 +32,21 @@ git clone https://github.com/seu-usuario/coban-archive.git
 cd coban-archive
 pip install -r requirements.txt
 python main.py
+
+## 📸 Capturas de Tela
+
+<p align="center">
+  <img src="https://i.imgur.com/rT4ltny.png" width="1000" alt="Tela Principal">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/PWy0UCv.png" width="1000" alt="Player de Música">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/a0nck3t.png" width="1000" alt="Galeria de Fotos">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/Hwv9LgQ.png" width="1000" alt="Configurações">
+</p>
