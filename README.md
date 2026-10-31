@@ -4,7 +4,7 @@
 
 **Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos.**
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1.2-blue)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1.3-blue)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)
 ![PySide6](https://img.shields.io/badge/UI-PySide6%20(Qt)-41CD52?logo=qt&logoColor=white)
 ![SQLite](https://img.shields.io/badge/cache-SQLite-003B57?logo=sqlite&logoColor=white)
