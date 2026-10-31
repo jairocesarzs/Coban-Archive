@@ -222,6 +222,25 @@ Os arquivos ficam na pasta de dados do usuário (`QStandardPaths.AppDataLocation
 
 ---
 
+##  📷 Capturas de Tela
+
+<p align="center">
+  <img src="https://i.imgur.com/rT4ltny.png" width="1000" alt="Tela Principal">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/PWy0UCv.png" width="1000" alt="Player de Música">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/a0nck3t.png" width="1000" alt="Galeria de Fotos">
+</p>
+
+<p align="center">
+  <img src="https://i.imgur.com/Hwv9LgQ.png" width="1000" alt="Configurações">
+</p>
+
+
 <div align="center">
 
 Feito com ❤️ e **PySide6** · [Repositório](https://github.com/jairocesarzs/Coban-Archive)
