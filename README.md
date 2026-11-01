@@ -4,7 +4,7 @@
 
 **Gerenciador de biblioteca de músicas, CDs, vídeos, jogos e galeria de fotos.**
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1.3-blue)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1.2-blue)
 ![Python](https://img.shields.io/badge/python-3.9%2B-3776AB?logo=python&logoColor=white)
 ![PySide6](https://img.shields.io/badge/UI-PySide6%20(Qt)-41CD52?logo=qt&logoColor=white)
 ![SQLite](https://img.shields.io/badge/cache-SQLite-003B57?logo=sqlite&logoColor=white)
@@ -22,6 +22,7 @@
 - [Estrutura do projeto](#-estrutura-do-projeto)
 - [Arquitetura](#-arquitetura)
 - [Guia para desenvolvedores](#-guia-para-desenvolvedores)
+- [Banco de dados](#-banco-de-dados)
 - [Dados do aplicativo](#-dados-do-aplicativo)
 
 ---
@@ -129,7 +130,7 @@ Coban-Archive/
 | `main.py` | Configura o log, cria o `QApplication` e junta UI + lógica em `CobanArchiveHome`. | mudar a inicialização do app |
 | `core.py` | Tudo que **não é visual**: varredura de pastas, banco, miniaturas, player, configuração e atalhos de lógica. | mudar uma regra ou um comportamento |
 | `layout_ui.py` | Tudo que **é visual**: layout das páginas, cards, estilos (QSS), temas, diálogos e menus. | mudar a aparência |
-| `library_db.py` | Persistência SQLite (`existing_*`, `upsert_*`, `delete_*`, `record_scan`). | mudar o esquema do banco |
+| `library_db.py` | Cache SQLite com uma API única por tipo: `get`, `existing`, `upsert`, `delete` (ver [Banco de dados](#-banco-de-dados)). | mudar o esquema do banco |
 
 ---
 
@@ -196,12 +197,28 @@ Procure pelos comentários de seção dentro da classe `LayoutUI`:
 
 As abas de grade compartilham o mesmo fluxo, descrito pela tabela `_GRID_TABS` em `core.py`. Para criar uma nova:
 
-1. Adicione uma entrada em `_GRID_TABS` (nomes dos atributos, lote, colunas, mensagens).
+1. Adicione uma entrada em `_GRID_TABS` (nomes dos atributos, lote, colunas, mensagens e o `kind` do banco).
 2. Crie `carregar_<aba>()` com a thread de varredura da aba (`ScannerThread` ou uma subclasse de `_BaseScanner`).
 3. Crie `_on_<aba>_scanned()`, `_card_for_<aba>()` e `_on_<aba>_thumb_ready()`.
 4. Em `layout_ui.py`, crie o `_build_<aba>_card()` e a página (use `_make_scroll_grid`).
 
 > ℹ️ `_on_<aba>_scanned` e `_card_for_<aba>` são chamados pelo **nome** (`getattr` com `f"..."`), por isso parecem "não usados" em buscas de texto.
+
+### 🗄️ Banco de dados
+
+`library_db.py` guarda o cache da biblioteca. Todos os tipos (`tracks`, `albums`, `videos`, `games`, `images`) usam a mesma API, escolhida pelo `kind`:
+
+```python
+db.get("tracks", pastas)        # lista para a interface (cache)
+db.existing("tracks", pastas)   # {chave: linha} para o scanner descobrir o que mudou
+db.upsert("tracks", linhas)     # grava itens novos/alterados
+db.delete("tracks", chaves)     # remove o que sumiu do disco
+```
+
+- As consultas por pasta incluem **todas as subpastas** das pastas configuradas (nada de `IN (...)` só na raiz).
+- Listas de caminhos saem ordenadas pelo nome do arquivo, igual aos scanners.
+- A integridade é verificada com `PRAGMA quick_check` na abertura, e um banco corrompido é renomeado para `.corrupt-<data>` e recriado.
+- Para um novo tipo, acrescente-o em `_KINDS`, `_COLUMNS` (e `SCHEMA`) em `library_db.py`.
 
 ### Varreduras (`_BaseScanner`)
 
@@ -221,6 +238,7 @@ Os arquivos ficam na pasta de dados do usuário (`QStandardPaths.AppDataLocation
 | `coban_archive.log` | Log do aplicativo (rotativo, até 2 MB × 3 arquivos) |
 
 ---
+
 
 ##  📷 Capturas de Tela
 
@@ -243,6 +261,6 @@ Os arquivos ficam na pasta de dados do usuário (`QStandardPaths.AppDataLocation
 
 <div align="center">
 
-Feito com ❤️ e **PySide6** · [Repositório](https://github.com/jairocesarzs/Coban-Archive)
+Feito com **PySide6** · [Repositório](https://github.com/jairocesarzs/Coban-Archive)
 
 </div>
